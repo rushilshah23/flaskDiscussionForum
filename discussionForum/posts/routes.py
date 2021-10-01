@@ -3,8 +3,8 @@ from flask_login import current_user, login_required
 from discussionForum import db
 from discussionForum.models import Post
 from discussionForum.posts.forms import PostForm
-
-
+from flask import session
+#use session for safety 
 
 from flask import Blueprint
 
